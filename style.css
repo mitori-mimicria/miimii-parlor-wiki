@@ -72,6 +72,8 @@ img { max-width: 100%; height: auto; }
   color: var(--soft);
   font-size: 12px;
 }
+.banner-img { display: block; aspect-ratio: auto; background: none; }
+.banner-img img { display: block; width: 100%; height: auto; }
 .pr-tag {
   position: absolute;
   top: 0;
