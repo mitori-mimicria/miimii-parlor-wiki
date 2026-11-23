@@ -184,3 +184,16 @@ figure.mid { max-width: 420px; }
 .spoiler { margin: 6px 0 12px; border: 1px dashed var(--line); padding: 4px 8px; }
 .spoiler > summary { cursor: pointer; color: var(--soft); font-size: 13px; }
 .spoiler[open] > summary { margin-bottom: 6px; }
+
+/* 言語の切り替え（11-23・上の帯）。今の言語は字の地の色を反転した印で示す */
+.lang { margin: 4px 0 0; font-size: 12px; line-height: 1.7; color: var(--head-sub); }
+.lang a, .lang a:visited { color: var(--head-ink); }
+.lang a:hover { color: var(--head-sub); }
+.lang .now { padding: 0 4px; background: var(--head-sub); color: var(--head-bg); }
+.lang a:focus-visible { outline-color: var(--head-ink); }
+
+/* 言語ごとの字（2000年代の各国のwikiでよく見た既定の字） */
+html[lang="en"] body { font-family: Verdana, Tahoma, Arial, "MS PGothic", sans-serif; }
+html[lang="ko"] body { font-family: Gulim, Dotum, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+html[lang="zh-Hans"] body { font-family: SimSun, "Microsoft YaHei", "PingFang SC", sans-serif; }
+html[lang="zh-Hant"] body { font-family: PMingLiU, "Microsoft JhengHei", "PingFang TC", sans-serif; }

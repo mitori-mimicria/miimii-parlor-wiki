@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the parlor works - MiiMii Parlor Strategy Wiki</title>
+<meta name="description" content="Taking a machine, balls and prizes, making money, cigarettes and drinks, occult and member ranks.">
+<link rel="stylesheet" href="../style.css">
+<!--ALT:BEGIN-->
+<link rel="alternate" hreflang="ja" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/hall.html">
+<link rel="alternate" hreflang="en" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/en/hall.html">
+<link rel="alternate" hreflang="ko" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/ko/hall.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/zh-hans/hall.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/zh-hant/hall.html">
+<link rel="alternate" hreflang="x-default" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/hall.html">
+<!--ALT:END-->
+</head>
+<body id="top">
+<div class="site">
+<header class="head">
+<p class="head-name"><a href="index.html">MiiMii Parlor Strategy Wiki</a></p>
+<p class="head-sub">Strategy notes for MiiMii Parlor, a pachinko parlor in VRChat</p>
+<!--LANG:BEGIN-->
+<nav class="lang" aria-label="Language"><a href="../hall.html" hreflang="ja" lang="ja">日本語</a> | <span class="now" lang="en" aria-current="page">English</span> | <a href="../ko/hall.html" hreflang="ko" lang="ko">한국어</a> | <a href="../zh-hans/hall.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> | <a href="../zh-hant/hall.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+<!--LANG:END-->
+</header>
+<nav class="tool" aria-label="Tools">[ <a href="index.html">Top</a> ] [ <span class="off">Edit</span> | <span class="off">Diff</span> | <span class="off">History</span> ] [ <a href="index.html#pages">Page list</a> | <a href="index.html#recent">Recent changes</a> | <a href="faq.html">FAQ</a> ]</nav>
+<div class="pr" aria-label="Ads">
+<!-- Ad 1: Milleaf (BOOTH product page) -->
+<div class="pr-item">
+<a class="banner banner-img" href="https://mimicria.booth.pm/items/8957446" target="_blank" rel="noopener"><span class="pr-tag">PR</span><img src="../img/banner-milleaf.png" width="468" height="60" alt="Milleaf: make a book from the VRChat photos you have saved. Photo book app, free trial available (BOOTH)"></a>
+<p class="pr-note">Milleaf is an app made by the author of this site.</p>
+</div>
+<!-- Ad 2: Mimicria Planetarium (VRChat world page) -->
+<div class="pr-item">
+<a class="banner banner-img" href="https://vrchat.com/home/world/wrld_c1abe1a4-a4f7-40de-bcd5-7b3b6c1bd456" target="_blank" rel="noopener"><span class="pr-tag">PR</span><img src="../img/banner-planetarium.png" width="468" height="60" alt="A night journey that never ends. Mimicria Planetarium, a VRChat world"></a>
+<p class="pr-note">Mimicria Planetarium is a VRChat world made by the author of this site.</p>
+</div>
+</div>
+<div class="body">
+<main class="main">
+<p class="lastmod">Last modified: 2026-11-23 (Mon)</p>
+<h1>How the parlor works</h1>
+<p>Notes on how the parlor works. Machine specs are on each machine's page.</p>
+<div class="contents">
+<p>Contents</p>
+<ul>
+<li><a href="#map">Floor map</a></li>
+<li><a href="#take">Taking a machine</a></li>
+<li><a href="#ball">Balls and saved balls</a></li>
+<li><a href="#prize">Counting and prizes</a></li>
+<li><a href="#booth">The mysterious antique dealer (Hoshino Shokai)</a></li>
+<li><a href="#money">Making money</a></li>
+<li><a href="#smoke">Cigarettes and drinks</a></li>
+<li><a href="#buff">Payout up and occult</a></li>
+<li><a href="#rank">Member ranks</a></li>
+<li><a href="#stats">Stats, rankings and displays</a></li>
+</ul>
+</div>
+
+<h2 id="map">Floor map</h2>
+<figure class="ref"><img src="../img/hall-inside.jpg" width="1200" height="771" alt="Inside the parlor from the entrance: the machine island past a dark red carpet" loading="lazy"><figcaption>Inside, seen from the entrance</figcaption></figure>
+<table>
+<thead><tr><th>Where</th><th>What's there</th></tr></thead>
+<tbody>
+<tr><th>Center</th><td>The machine island. RABBIT HOLE x6 on the front row, STAR PARADE x6 on the back row</td></tr>
+<tr><th>Left of the entrance</th><td>Prize counter, cigarette and drink shelves, counting machine (far end of the counter), coffee wagon (along the west wall)</td></tr>
+<tr><th>Right of the entrance</th><td>Your stats screen, rankings (east wall), and the rest area at the back (status board, TV and trash bins)</td></tr>
+<tr><th>Above the aisle</th><td>LED news board</td></tr>
+<tr><th>Outside</th><td>The mysterious antique dealer, Hoshino Shokai (the shack at the edge of the parking lot, left of the spawn point)</td></tr>
+</tbody>
+</table>
+<p class="note">* You spawn in the parking lot in front of the parlor.</p>
+
+<h2 id="take">Taking a machine</h2>
+<ol>
+<li>Press <span lang="ja">打つ</span> (Shoot, the red button on the handle), <span lang="ja">玉を借りる</span> (Borrow balls) or <span lang="ja">貯玉から出す</span> (Use saved balls) on a free machine to take it. You don't sit down</li>
+<li>If there are balls, it shoots by itself. Strength is automatic too (set to spin the most)</li>
+<li>For PUSH, press the button that appears in front of the dot display</li>
+<li>Balls in the dollar box (ball box) go back to the upper tray by themselves as you shoot</li>
+<li>Walk 2.2 m away and it stops shooting. If balls are left, or you're in the middle of holds, a spin, a jackpot, kakuhen or jitan, the machine is kept for you for 3 minutes</li>
+</ol>
+
+<h2 id="ball">Balls and saved balls</h2>
+<table>
+<tbody>
+<tr><th>Borrow balls</th><td>125 balls for 500 Mi (1 ball = 4 Mi)</td></tr>
+<tr><th>Use saved balls</th><td>125 balls at a time</td></tr>
+<tr><th>Upper tray</th><td>Up to 250 balls. Overflow goes to the lower tray</td></tr>
+<tr><th>Lower tray</th><td>Up to 500 balls. When it's nearly full, it empties into a dollar box by itself</td></tr>
+<tr><th>Dollar box</th><td>Up to 1,000 balls. Full boxes get stacked (up to 20)</td></tr>
+</tbody>
+</table>
+<p class="note">* If you leave without counting, the balls at your machine go to your saved balls next time you visit.</p>
+
+<h2 id="prize">Counting and prizes</h2>
+<ol>
+<li>Press <span lang="ja">計数</span> (Count) on the counting machine to count your balls into saved balls. The dollar box tips over the machine and the balls pour in</li>
+<li>Press <span lang="ja">景品に換える</span> (Exchange for prizes) to turn saved balls into prizes. Pick how many 250-ball prizes (navy case) and 25-ball prizes (red case) with - and +. <span lang="ja">全部</span> (All) takes as many as you can afford</li>
+<li>Balls you don't exchange stay as saved balls. You can use them for cigarettes and drinks too</li>
+</ol>
+<div class="figs">
+<figure><img src="../img/jet.jpg" width="960" height="540" alt="Balls from a dollar box pouring into the counting machine" loading="lazy"><figcaption>Counting machine</figcaption></figure>
+<figure><img src="../img/prize-panel.jpg" width="960" height="540" alt="The counting machine screen for choosing prizes, with - and + for 250 and 25 balls" loading="lazy"><figcaption>Choosing how many prizes</figcaption></figure>
+</div>
+<p class="note">* The case colors change with your member rank. White members get navy and red.</p>
+<div class="figs">
+<figure><img src="../img/prize-counter.jpg" width="960" height="540" alt="The prize counter with a prize sign and navy and red cases" loading="lazy"><figcaption>Prize counter</figcaption></figure>
+<figure><img src="../img/prize-rank.jpg" width="960" height="305" alt="Two prize cases side by side: navy and red for White members on the left, gold for Gold members on the right" loading="lazy"><figcaption>Case colors (White member left, Gold member right)</figcaption></figure>
+</div>
+
+<h2 id="booth">The mysterious antique dealer (Hoshino Shokai)</h2>
+<figure class="ref"><img src="../img/booth.jpg" width="960" height="540" alt="The dealer's little window, with navy and red prize cases on the counter" loading="lazy"><figcaption>The dealer's window</figcaption></figure>
+<p>A shack outside, left of the spawn point. For some reason it buys the parlor's prizes. Press <span lang="ja">景品を出す</span> (Hand over prizes) at the little window and your prizes are exchanged for Mi. Supposedly it has nothing to do with the parlor.</p>
+<table>
+<thead><tr><th>Member rank</th><th>250-ball prize</th><th>25-ball prize</th><th>Per ball</th></tr></thead>
+<tbody>
+<tr><th>White</th><td class="n">1,000 Mi</td><td class="n">100 Mi</td><td class="n">4 Mi</td></tr>
+<tr><th>Blue</th><td class="n">1,050 Mi</td><td class="n">105 Mi</td><td class="n">4.2 Mi</td></tr>
+<tr><th>Green</th><td class="n">1,100 Mi</td><td class="n">110 Mi</td><td class="n">4.4 Mi</td></tr>
+<tr><th>Red</th><td class="n">1,175 Mi</td><td class="n">118 Mi</td><td class="n">4.7 Mi</td></tr>
+<tr><th>Gold</th><td class="n">1,250 Mi</td><td class="n">125 Mi</td><td class="n">5 Mi</td></tr>
+</tbody>
+</table>
+<p class="note">* The rank rate only applies to what you won. Borrowed balls count as 4 Mi per ball at every rank (<a href="#rank">Member ranks</a>).</p>
+
+<h2 id="money">Making money</h2>
+<p>You start with 5,000 Mi. Your Mi, saved balls and prizes carry over to your next visit.</p>
+<div class="scroll">
+<table>
+<thead><tr><th>How</th><th>What you get</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><th>Coffee seller</th><td>250 saved balls for 3 cups</td><td>20 s before the next job</td></tr>
+<tr><th>Trash pickup</th><td>10 balls per can or butt (saved balls)</td><td>Plus 1 min of payout up</td></tr>
+<tr><th>Daily tasks</th><td>50-125 saved balls (weekly task: 375-625)</td><td>3 a day, 1 a week</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="coffee">Coffee seller</h3>
+<figure class="ref"><img src="../img/coffee.jpg" width="960" height="540" alt="A round tray with three coffees and a 3 cups left display" loading="lazy"><figcaption>Tray</figcaption></figure>
+<ol>
+<li>Press <span lang="ja">売り子を始める</span> (Start selling) on the stand sign at the coffee wagon. A tray appears in your hand (left hand in VR, bottom of the screen on desktop)</li>
+<li>Order cards pop up on the machines. Red cards are hot, blue cards are iced</li>
+<li>Fill the tray with hot coffee from the pot or iced coffee from the pitcher (up to 3 cups)</li>
+<li>Press a card to hand it over. Deliver 3 cups and get 250 saved balls</li>
+<li>20 s break before the next job</li>
+</ol>
+<div class="koma">
+<figure><img src="../img/coffee-wagon.jpg" width="800" height="450" alt="The coffee wagon and its stand sign by the west wall" loading="lazy"><figcaption>1. The wagon's sign</figcaption></figure>
+<figure><img src="../img/coffee-card.jpg" width="800" height="450" alt="A hot coffee order card standing on top of a machine" loading="lazy"><figcaption>2. Order card (hot)</figcaption></figure>
+<figure><img src="../img/coffee-thanks.jpg" width="800" height="450" alt="The card after delivery: thank you, +83 balls" loading="lazy"><figcaption>3. "Thank you" when delivered</figcaption></figure>
+<figure><img src="../img/coffee-done.jpg" width="800" height="450" alt="The wagon sign saying good work, +250 balls" loading="lazy"><figcaption>4. "Good work" after 3 cups</figcaption></figure>
+</div>
+<h3 id="litter">Trash pickup and gifts</h3>
+<ul>
+<li>Drop empty cans and cigarette butts over the hole of the trash bins in the rest area. Anyone's trash counts: each can or butt adds 10 saved balls and 1 minute of payout up</li>
+<li>Floor trash appears around the machines every 25-50 s (up to 6)</li>
+<li>Put a drink or cigarette in the drink holder or ashtray of a machine someone else is playing and it becomes a gift. You and the other player both get 1 minute of payout up</li>
+</ul>
+<div class="figs">
+<figure><img src="../img/litter.jpg" width="800" height="450" alt="An empty can on the floor near the machines" loading="lazy"><figcaption>Floor trash (empty can)</figcaption></figure>
+<figure><img src="../img/bin.jpg" width="800" height="533" alt="Green and blue trash bins in the rest area with a +10 balls sign above" loading="lazy"><figcaption>Trash bins (cleanup +10 balls)</figcaption></figure>
+</div>
+<h3 id="task">Daily tasks</h3>
+<figure class="ref"><img src="../img/tasks.jpg" width="720" height="546" alt="Daily tasks on your stats screen: finished tasks and the weekly task" loading="lazy"><figcaption>Your stats screen (daily tasks)</figcaption></figure>
+<p>3 a day and 1 a week, picked from this list.</p>
+<ul>
+<li>Spin a machine 100 times</li>
+<li>Hit 1 jackpot</li>
+<li>Count balls at the counting machine</li>
+<li>Exchange balls for prizes</li>
+<li>Take prizes to the mysterious antique dealer</li>
+<li>Deliver 1 coffee</li>
+<li>Throw away 3 empty cans</li>
+<li>Smoke 1 cigarette</li>
+</ul>
+
+<h2 id="smoke">Cigarettes and drinks</h2>
+<p>Exchange saved balls for them and use them at your machine to get payout up. Hoshizora Cheese sticks work the same way as cigarettes.</p>
+<div class="contents">
+<p>In this section</p>
+<ul>
+<li><a href="#smoke-buy">Buying and brands</a></li>
+<li><a href="#smoke-out">Taking one out</a></li>
+<li><a href="#smoke-use">Using them</a></li>
+<li><a href="#smoke-time">How long things last</a></li>
+<li><a href="#smoke-buff">Effects</a></li>
+<li><a href="#smoke-gift">Gifts</a></li>
+<li><a href="#smoke-trash">Throwing trash away</a></li>
+<li><a href="#smoke-tips">Trivia</a></li>
+</ul>
+</div>
+<div class="scroll">
+<table>
+<thead><tr><th></th><th>Cigarettes</th><th>Hoshizora Cheese</th><th>Drinks</th></tr></thead>
+<tbody>
+<tr><th>Price</th><td>70 saved balls for a pack of 20</td><td>70 saved balls for a bag of 20</td><td>300 saved balls for a case of 12</td></tr>
+<tr><th>Take out</th><td colspan="2">Press the machine's ashtray for 1</td><td>Press the drink holder in front of the ashtray for 1</td></tr>
+<tr><th>Use</th><td>Hold and use to light it</td><td>Hold and use to unwrap it</td><td>Hold and use to open it</td></tr>
+<tr><th>Bring to mouth</th><td>Smoke. About 10 puffs burns it down near the filter</td><td>Bite. About 15 bites to finish</td><td>Drink. Empty after 8 sips</td></tr>
+<tr><th>Payout up</th><td>While lit</td><td>While eating</td><td>While open with drink left</td></tr>
+<tr><th>Just holding it</th><td>Burns out in 4 min without smoking</td><td>Cleared after 4 min without eating</td><td>Empty 4 min after opening</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="smoke-buy">Buying and brands</h3>
+<ul>
+<li>Cigarettes are on the shelf above the prize counter's showcase. Press a brand's column for 1 pack of that brand. The red "<span lang="ja">タバコに換える</span>" (Exchange for cigarettes) button buys the brand you bought last</li>
+<li>Hoshizora Cheese is the box between the cigarette shelf and the drink rack. Available from White members up</li>
+<li>Drinks are on the drink rack at the same counter. Press a sample can for 1 case of that kind. The case shows up in front of the rack for 4 s</li>
+<li>Not enough saved balls shows "<span lang="ja">貯玉が足りません</span>" (not enough saved balls). How many you have of each brand carries over to your next visit</li>
+</ul>
+<p>More brands open up as your member rank goes up. Locked items are still on the shelf with a sign like "<span lang="ja">ブルー会員から</span>" (Blue members and up). Press one and it tells you something like "AURUM is for Gold members". Drinks you already have can be taken out at any rank.</p>
+<table>
+<thead><tr><th>Member rank</th><th>Cigarettes</th><th>Drinks</th></tr></thead>
+<tbody>
+<tr><th>White</th><td>MOONRISE, CORAL</td><td>Orange, green tea</td></tr>
+<tr><th>Blue</th><td>MINT LEAF</td><td>Cola</td></tr>
+<tr><th>Green</th><td>COMET</td><td>Soda</td></tr>
+<tr><th>Red</th><td>SCARLET</td><td>Coffee</td></tr>
+<tr><th>Gold</th><td>AURUM</td><td>Milk tea</td></tr>
+</tbody>
+</table>
+<div class="figs">
+<figure><img src="../img/shop-rank.jpg" width="960" height="595" alt="Four views of the cigarette and drink shelves: cigarettes on top, drinks below, White member left, Gold member right" loading="lazy"><figcaption>Brand shelves (cigarettes top, drinks bottom; White member left, Gold member right)</figcaption></figure>
+<figure><img src="../img/tb-cheese-box.jpg" width="800" height="540" alt="The stick cheese box with a Hoshizora Cheese 70 balls for 20 sign and the show other people's cigarettes as cheese sign" loading="lazy"><figcaption>Hoshizora Cheese box and signs</figcaption></figure>
+</div>
+
+<h3 id="smoke-out">Taking one out</h3>
+<ul>
+<li>Press the ashtray and one comes out of your stock into the ashtray's slot. The ashtray holds 1 at a time</li>
+<li>Press the drink holder and a can comes out and stands in it. Nothing comes out while a can is already standing there</li>
+<li>You get the brand you bought last. For drinks, when that kind runs out you get one of the other kinds you have</li>
+<li>How many you have left shows above the ashtray for 3.5 s. With none left it says to buy more at the counter</li>
+<li>Up to 16 cigarettes and 16 cans can be out in the parlor at once</li>
+</ul>
+
+<h3 id="smoke-use">Using them</h3>
+<div class="scroll">
+<table>
+<thead><tr><th></th><th>VR</th><th>Desktop</th></tr></thead>
+<tbody>
+<tr><th>Smoking</th><td>Bring the filter within 5.5 cm of your mouth</td><td>Hold and use to bring it to your mouth</td></tr>
+<tr><th>Ash</th><td colspan="2">Ash grows past the tip and falls off at 1.6 cm. In VR you can use it to tap the ash off</td></tr>
+<tr><th>Drinking</th><td>Bring the lid within 8 cm of your mouth and tilt. 25° when full, up to 70° as it gets empty</td><td>Hold and use to bring it up to the right corner of your mouth (1 s per sip)</td></tr>
+<tr><th>Eating cheese</th><td colspan="2">Hold and bring it up like a cigarette. Each bite makes it shorter</td></tr>
+</tbody>
+</table>
+</div>
+<div class="figs">
+<figure><img src="../img/tb-ash.jpg" width="800" height="450" alt="A lit cigarette in the ashtray with ash at the tip and smoke rising" loading="lazy"><figcaption>Lit cigarette (ash and smoke)</figcaption></figure>
+<figure><img src="../img/tb-can-open.jpg" width="800" height="450" alt="An opened can standing in the drink holder" loading="lazy"><figcaption>Opened can (drink holder)</figcaption></figure>
+</div>
+
+<h3 id="smoke-time">How long things last</h3>
+<table>
+<thead><tr><th>Situation</th><th>Gone after</th></tr></thead>
+<tbody>
+<tr><td>Lit cigarette left in the ashtray</td><td>Goes out after 90 s, and the butt disappears 25 s later</td></tr>
+<tr><td>Unlit cigarette left in the ashtray</td><td>2 min</td></tr>
+<tr><td>Cigarette dropped on the floor</td><td>Goes out after 90 s, gone 5 min after it was dropped</td></tr>
+<tr><td>Cheese left lying around</td><td>90 s</td></tr>
+<tr><td>Opened can</td><td>Empty after 4 min even if you don't drink</td></tr>
+<tr><td>Empty can in the drink holder</td><td>20 s (press the holder to clear it and get the next can)</td></tr>
+<tr><td>Empty can on the floor</td><td>5 min</td></tr>
+<tr><td>Unopened can left out</td><td>10 min in the holder, 3 min elsewhere. It goes back to the owner's stock</td></tr>
+</tbody>
+</table>
+
+<h3 id="smoke-buff">Effects</h3>
+<p>Whether you're holding it or it's sitting in the ashtray or holder, each attacker count pays 1 extra ball (payout up). Higher-rank brands keep the payout up going for a while after you finish.</p>
+<table>
+<thead><tr><th>Brand rank</th><th>Lasts after you finish</th></tr></thead>
+<tbody>
+<tr><td>White (and Hoshizora Cheese)</td><td class="n">0 s</td></tr>
+<tr><td>Blue</td><td class="n">15 s</td></tr>
+<tr><td>Green</td><td class="n">30 s</td></tr>
+<tr><td>Red</td><td class="n">45 s</td></tr>
+<tr><td>Gold</td><td class="n">60 s</td></tr>
+</tbody>
+</table>
+<p>They also tie into the occult (<a href="#occult">Occult</a>).</p>
+<ul>
+<li>① Lighting a cigarette gives x1.08 for 60 s. Unwrapping a cheese stick counts as ① too</li>
+<li>⑤ While a can stands in this machine's drink holder, x1.08. Your own can or one someone left for you both count</li>
+</ul>
+
+<h3 id="smoke-gift">Gifts</h3>
+<ul>
+<li>Put a drink or cigarette in the drink holder or ashtray of a machine someone else is playing and it's a gift. Cheese works too</li>
+<li>Both the giver and the receiver get 1 minute of payout up (stacks up to 5 min)</li>
+<li>The giver's ashtray shows "<span lang="ja">差し入れ</span>" (gift), and the receiver's shows "<span lang="ja">〇〇さんから ジュースの差し入れ</span>" (a drink from so-and-so)</li>
+<li>The giver can get the effect once every 20 s, the receiver once every 10 s</li>
+</ul>
+
+<h3 id="smoke-trash">Throwing trash away</h3>
+<ul>
+<li>Let go of empty cans and butts over the hole of the trash bins in the rest area. Within 26 cm sideways of the hole's center, and from 35 cm below to 1 m above the hole, it goes in. Things resting on the lid count too</li>
+<li>Anyone's trash counts, including your own: 10 saved balls each and 1 minute of payout up (stacks up to 5 min)</li>
+<li>Wait 6 s between rewards. Cans with drink left, unopened cans and lit cigarettes give nothing</li>
+<li>Floor trash appears around the machines every 25-50 s (up to 6, see <a href="#litter">Trash pickup</a>)</li>
+</ul>
+
+<h3 id="smoke-tips">Trivia</h3>
+<ul>
+<li>The sign in front of the cheese box, "<span lang="ja">ほかの人のタバコをチーズに見せる</span>" (show other people's cigarettes as cheese), toggles on and off. While it's on, other people's cigarettes and butts look like cheese sticks, with no fire, smoke or ash. Only on your screen</li>
+<li>Cheese has no fire, smoke, ash or lighter sound. Unwrapping goes "piri", biting goes "mogu"</li>
+<li>A cigarette glows brighter while you puff and you exhale smoke a moment after you lower it. Each puff takes 4-5 mm off</li>
+<li>You can see the drink's surface through the can opening, and it drops as you drink. The color matches the kind of drink</li>
+<li>Nobody can take what you're holding. Things you set down can be taken</li>
+</ul>
+<figure class="ref"><img src="../img/tb-cheese-half.jpg" width="800" height="600" alt="A Hoshizora Cheese stick left in the machine's ashtray" loading="lazy"><figcaption>Hoshizora Cheese in the ashtray</figcaption></figure>
+
+<h2 id="buff">Payout up and occult</h2>
+<h3>Payout up</h3>
+<p>Each attacker count pays 1 extra ball.</p>
+<table>
+<thead><tr><th>When</th><th>How long</th></tr></thead>
+<tbody>
+<tr><td>Holding or setting down an open drink</td><td>While it lasts</td></tr>
+<tr><td>Holding or setting down a lit cigarette</td><td>While it lasts</td></tr>
+<tr><td>Throwing away 1 piece of trash</td><td>1 min (stacks up to 5 min)</td></tr>
+<tr><td>Giving or receiving a gift</td><td>1 min (stacks up to 5 min)</td></tr>
+</tbody>
+</table>
+<h3 id="occult">Occult</h3>
+<p>Pachinko superstitions that actually work here. In normal mode on your own machine only, the jackpot odds go up a little, up to x1.3 combined. No effect plays when they kick in.</p>
+<table>
+<thead><tr><th>No.</th><th>Condition</th><th>Odds</th></tr></thead>
+<tbody>
+<tr><td>①</td><td>60 s after lighting a cigarette</td><td class="n">x1.08</td></tr>
+<tr><td>②</td><td>The next 5 holds after coming back to a kept machine after 20 s or more</td><td class="n">x1.10</td></tr>
+<tr><td>③</td><td>60 s after the machine next to yours in the same row hits a jackpot</td><td class="n">x1.08</td></tr>
+<tr><td>④</td><td>30 s after borrowing balls</td><td class="n">x1.05</td></tr>
+<tr><td>⑤</td><td>A can is standing in this machine's holder (yours, or one someone left for you)</td><td class="n">x1.08</td></tr>
+</tbody>
+</table>
+<h3>Players in the instance</h3>
+<p>The more people in the instance, the more often balls go into the heso (up to +15%).</p>
+<p class="note">* Your active buffs show under your Mi at the bottom left of the screen (for example: <span lang="ja">出玉UP 3:10 ①④当たり×1.13 人数で回り+9%</span>, which means payout up for 3:10, occult ①④ at x1.13, and +9% spins from the player count).</p>
+
+<h2 id="rank">Member ranks</h2>
+<p>Your rank goes up with the most Mi you have ever held at once. It never goes down.</p>
+<div class="scroll">
+<table>
+<thead><tr><th>Rank</th><th>Highest Mi held</th><th>Value per ball</th><th>Ball color</th><th>Card pattern</th></tr></thead>
+<tbody>
+<tr><th>White</th><td class="n">0</td><td class="n">4 Mi</td><td>Silver</td><td>Thin diagonal lines</td></tr>
+<tr><th>Blue</th><td class="n">50,000 Mi</td><td class="n">4.2 Mi</td><td>Blue silver</td><td>Waves</td></tr>
+<tr><th>Green</th><td class="n">150,000 Mi</td><td class="n">4.4 Mi</td><td>Green silver</td><td>Dots</td></tr>
+<tr><th>Red</th><td class="n">400,000 Mi</td><td class="n">4.7 Mi</td><td>Red silver</td><td>Thick stripes</td></tr>
+<tr><th>Gold</th><td class="n">1,000,000 Mi</td><td class="n">5 Mi</td><td>Gold</td><td>Ripples and stars</td></tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The value per ball is what the mysterious antique dealer pays for prizes. It only applies to what you won. Borrowed balls count as 4 Mi</li>
+<li>The prize case colors and the cigarette and drink brands change with your rank too (<a href="#smoke">brand table</a>)</li>
+<li>Your screen shows how far you are from the next rank, like "<span lang="ja">ブルーまであと12,300Mi</span>" (12,300 Mi to Blue)</li>
+</ul>
+<figure class="mid"><img src="../img/cards.jpg" width="860" height="674" alt="Five member cards from the bottom-left display: White, Blue, Green, Red and Gold from the top" loading="lazy"><figcaption>Member card colors (White, Blue, Green, Red, Gold from the top)</figcaption></figure>
+<figure class="ref"><img src="../img/tag-gold.jpg" width="760" height="300" alt="The display next to an avatar: gold card, Gold member, Mi and balls held, top rank" loading="lazy"><figcaption>Display next to an avatar (Gold member)</figcaption></figure>
+
+<h2 id="stats">Stats, rankings and displays</h2>
+<table>
+<tbody>
+<tr><th>Your stats</th><td>Spins, jackpots, best streak, ichigeki, spent, won back and net. Switches with daily tasks every 8 s</td></tr>
+<tr><th>Rankings</th><td>6 pages: this month's net, ichigeki and best streak, plus Mi held, all-time ichigeki and best streak. The monthly pages reset each month</td></tr>
+<tr><th>LED news board</th><td>When someone hits a jackpot it scrolls something like "<span lang="ja">〇〇さんが7番台のRABBIT HOLEで大当り</span>" (so-and-so hit a jackpot on RABBIT HOLE #7)</td></tr>
+<tr><th>Status board and TV</th><td>In the rest area. Jackpots, streak, starts and state for all 12 machines, plus a camera that cycles through the machines being played</td></tr>
+</tbody>
+</table>
+<p class="note">* Ichigeki is the most balls paid out by the attacker in one streak.</p>
+<div class="figs">
+<figure><img src="../img/ranking.jpg" width="800" height="533" alt="The ranking board: HIGH SCORE and this month's best streak" loading="lazy"><figcaption>Ranking board</figcaption></figure>
+<figure><img src="../img/dc-band.jpg" width="960" height="540" alt="The data counter on top of a machine and the LED strip above it" loading="lazy"><figcaption>LED strip above the data counter</figcaption></figure>
+</div>
+<h3>On-screen display</h3>
+<figure class="ref"><img src="../img/hud.jpg" width="600" height="400" alt="The bottom-left display: task done +75 balls, distance to Gold, Mi and saved balls, buffs on the last line" loading="lazy"><figcaption>Bottom-left display (buffs on the last line)</figcaption></figure>
+<p>Shows your member card and rank, Mi, saved balls and the balls at your machine. On desktop and mobile it's at the bottom left of the screen. In VR, look at your left wrist. Toggle it with the sign under your stats screen.</p>
+<p>Your member card, rank, Mi and balls also show in small print next to your avatar's head, so other people can see them.</p>
+</main>
+<nav class="menu" aria-label="Menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="index.html">Top page</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+<h2>Machines</h2>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a> (new)</li>
+</ul>
+<h2>Parlor</h2>
+<ul>
+<li><a href="hall.html">How the parlor works</a></li>
+<li><a href="hall.html#take">Taking a machine</a></li>
+<li><a href="hall.html#money">Making money</a></li>
+<li><a href="hall.html#occult">Occult</a></li>
+<li><a href="hall.html#rank">Member ranks</a></li>
+</ul>
+<h2>Recent updates</h2>
+<p class="date">2026-11-23</p>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a></li>
+<li><a href="hall.html">How the parlor works</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="index.html">Top page</a></li>
+</ul>
+<h2>Board</h2>
+<ul>
+<li><span class="off">Tips and info</span></li>
+<li><span class="off">Chat</span></li>
+</ul>
+</nav>
+</div>
+<footer class="foot"><p>© Mimicria — Mitori</p></footer>
+</div>
+</body>
+</html>

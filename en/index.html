@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiiMii Parlor Strategy Wiki</title>
+<meta name="description" content="Strategy wiki for MiiMii Parlor, a pachinko parlor in VRChat. Machine specs, effect reliability and how the parlor works.">
+<link rel="stylesheet" href="../style.css">
+<!--ALT:BEGIN-->
+<link rel="alternate" hreflang="ja" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/index.html">
+<link rel="alternate" hreflang="en" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/en/index.html">
+<link rel="alternate" hreflang="ko" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/ko/index.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/zh-hans/index.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/zh-hant/index.html">
+<link rel="alternate" hreflang="x-default" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/index.html">
+<!--ALT:END-->
+</head>
+<body id="top">
+<div class="site">
+<header class="head">
+<p class="head-name"><a href="index.html">MiiMii Parlor Strategy Wiki</a></p>
+<p class="head-sub">Strategy notes for MiiMii Parlor, a pachinko parlor in VRChat</p>
+<!--LANG:BEGIN-->
+<nav class="lang" aria-label="Language"><a href="../index.html" hreflang="ja" lang="ja">日本語</a> | <span class="now" lang="en" aria-current="page">English</span> | <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> | <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> | <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+<!--LANG:END-->
+</header>
+<nav class="tool" aria-label="Tools">[ <a href="index.html">Top</a> ] [ <span class="off">Edit</span> | <span class="off">Diff</span> | <span class="off">History</span> ] [ <a href="index.html#pages">Page list</a> | <a href="index.html#recent">Recent changes</a> | <a href="faq.html">FAQ</a> ]</nav>
+<div class="pr" aria-label="Ads">
+<!-- Ad 1: Milleaf (BOOTH product page) -->
+<div class="pr-item">
+<a class="banner banner-img" href="https://mimicria.booth.pm/items/8957446" target="_blank" rel="noopener"><span class="pr-tag">PR</span><img src="../img/banner-milleaf.png" width="468" height="60" alt="Milleaf: make a book from the VRChat photos you have saved. Photo book app, free trial available (BOOTH)"></a>
+<p class="pr-note">Milleaf is an app made by the author of this site.</p>
+</div>
+<!-- Ad 2: Mimicria Planetarium (VRChat world page) -->
+<div class="pr-item">
+<a class="banner banner-img" href="https://vrchat.com/home/world/wrld_c1abe1a4-a4f7-40de-bcd5-7b3b6c1bd456" target="_blank" rel="noopener"><span class="pr-tag">PR</span><img src="../img/banner-planetarium.png" width="468" height="60" alt="A night journey that never ends. Mimicria Planetarium, a VRChat world"></a>
+<p class="pr-note">Mimicria Planetarium is a VRChat world made by the author of this site.</p>
+</div>
+</div>
+<div class="body">
+<main class="main">
+<p class="lastmod">Last modified: 2026-11-23 (Mon)</p>
+<h1>Top page</h1>
+<figure class="ref"><img src="../img/shop-front.jpg" width="1200" height="675" alt="The front of the parlor at night: neon sign, automatic doors and a banner for the new RABBIT HOLE"><figcaption>The parlor at night</figcaption></figure>
+<p>A strategy wiki for MiiMii Parlor, a VRChat world. Machine specs, effect reliability tables and how the parlor works.</p>
+<p class="note">* Numbers can change when the parlor adjusts the machines.</p>
+
+<h2 id="machines">Machines on the floor</h2>
+<div class="scroll">
+<table>
+<thead><tr><th>Machine</th><th>Type</th><th>Jackpot</th><th>Units</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><a href="rabbit-hole.html">RABBIT HOLE</a></td><td>ST machine</td><td class="n">1/99.0</td><td class="n">6</td><td>New. 10-spin ST, left-shooting only</td></tr>
+<tr><td><a href="star-parade.html">STAR PARADE</a></td><td>Kakuhen loop</td><td class="n">1/69.7</td><td class="n">6</td><td>Kakuhen lasts until the next jackpot. 15 spins of jitan</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">* 1 ball = 4 Mi (125 balls for 500 Mi). RABBIT HOLE is on the front row of the island, STAR PARADE on the back row.</p>
+
+<h2 id="terms">Pachinko terms used here</h2>
+<div class="scroll">
+<table>
+<thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><th>Kakuhen</th><td>Probability-up mode. Jackpot odds go up until the next jackpot</td></tr>
+<tr><th>Jitan</th><td>Time-short mode. Faster spins and electric support, normal odds. Called Chance Time on STAR PARADE</td></tr>
+<tr><th>ST</th><td>Kakuhen that lasts a set number of spins (10 on RABBIT HOLE)</td></tr>
+<tr><th>Reach</th><td>Two reels match and the third is still spinning. Super reach is the long, flashy kind</td></tr>
+<tr><th>Hold</th><td>A saved spin (reserve). Hold lamps show them, and their color hints at the result</td></tr>
+<tr><th>Notice</th><td>Yokoku. An effect that hints at the result before or during a reach</td></tr>
+<tr><th>Gekiatsu</th><td>"Super hot." Used here for effects with 50% or more reliability</td></tr>
+<tr><th>Premium</th><td>A rare effect that guarantees a jackpot</td></tr>
+<tr><th>Rush</th><td>The ST or kakuhen run after a jackpot (Rabbit RUSH on RABBIT HOLE)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="beginner">For first-timers</h2>
+<ul>
+<li>You don't sit down to take a machine. Press <span lang="ja">打つ</span> (Shoot), <span lang="ja">玉を借りる</span> (Borrow balls) or <span lang="ja">貯玉から出す</span> (Use saved balls) on a free machine (<a href="hall.html#take">Taking a machine</a>)</li>
+<li>Shot strength is automatic. STAR PARADE switches to right-shooting by itself during jackpots, kakuhen and jitan</li>
+<li>Out of Mi? Work as a coffee seller. 3 cups = 250 saved balls (<a href="hall.html#money">Making money</a>)</li>
+<li>For some reason, the mysterious antique dealer (Hoshino Shokai) outside the parlor buys your prizes (<a href="hall.html#booth">The mysterious antique dealer</a>)</li>
+<li>Occult works. Light a cigarette and wait 60 seconds, for example (<a href="hall.html#occult">Occult</a>)</li>
+</ul>
+
+<h2 id="recent">Recent changes</h2>
+<ul>
+<li>2026-11-23 (Mon) <a href="star-parade.html">STAR PARADE</a>: kakuhen odds changed to 1/20.0. Spec table updated</li>
+<li>2026-11-23 (Mon) <a href="rabbit-hole.html">RABBIT HOLE</a>: ST odds changed to 1/9.0. Continuation rate updated to about 69%</li>
+<li>2026-11-23 (Mon) <a href="hall.html">How the parlor works</a>: machines are now played standing up, so Taking a machine was rewritten. Added member ranks and the brand table</li>
+<li>2026-11-22 (Sun) <a href="rabbit-hole.html">RABBIT HOLE</a>: page created for the new machine</li>
+</ul>
+
+<h2 id="pages">Page list</h2>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a></li>
+<li><a href="hall.html">How the parlor works</a> (taking a machine, balls and prizes, making money, occult, member ranks)</li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</main>
+<nav class="menu" aria-label="Menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="index.html">Top page</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+<h2>Machines</h2>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a> (new)</li>
+</ul>
+<h2>Parlor</h2>
+<ul>
+<li><a href="hall.html">How the parlor works</a></li>
+<li><a href="hall.html#take">Taking a machine</a></li>
+<li><a href="hall.html#money">Making money</a></li>
+<li><a href="hall.html#occult">Occult</a></li>
+<li><a href="hall.html#rank">Member ranks</a></li>
+</ul>
+<h2>Recent updates</h2>
+<p class="date">2026-11-23</p>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a></li>
+<li><a href="hall.html">How the parlor works</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="index.html">Top page</a></li>
+</ul>
+<h2>Board</h2>
+<ul>
+<li><span class="off">Tips and info</span></li>
+<li><span class="off">Chat</span></li>
+</ul>
+</nav>
+</div>
+<footer class="foot"><p>© Mimicria — Mitori</p></footer>
+</div>
+</body>
+</html>

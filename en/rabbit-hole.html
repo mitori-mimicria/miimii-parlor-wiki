@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RABBIT HOLE - MiiMii Parlor Strategy Wiki</title>
+<meta name="description" content="RABBIT HOLE specs, ST, reliability tables and hidden features like the 8R upgrade.">
+<link rel="stylesheet" href="../style.css">
+<!--ALT:BEGIN-->
+<link rel="alternate" hreflang="ja" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/rabbit-hole.html">
+<link rel="alternate" hreflang="en" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/en/rabbit-hole.html">
+<link rel="alternate" hreflang="ko" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/ko/rabbit-hole.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/zh-hans/rabbit-hole.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/zh-hant/rabbit-hole.html">
+<link rel="alternate" hreflang="x-default" href="https://mitori-mimicria.github.io/miimii-parlor-wiki/rabbit-hole.html">
+<!--ALT:END-->
+</head>
+<body id="top">
+<div class="site">
+<header class="head">
+<p class="head-name"><a href="index.html">MiiMii Parlor Strategy Wiki</a></p>
+<p class="head-sub">Strategy notes for MiiMii Parlor, a pachinko parlor in VRChat</p>
+<!--LANG:BEGIN-->
+<nav class="lang" aria-label="Language"><a href="../rabbit-hole.html" hreflang="ja" lang="ja">日本語</a> | <span class="now" lang="en" aria-current="page">English</span> | <a href="../ko/rabbit-hole.html" hreflang="ko" lang="ko">한국어</a> | <a href="../zh-hans/rabbit-hole.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> | <a href="../zh-hant/rabbit-hole.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+<!--LANG:END-->
+</header>
+<nav class="tool" aria-label="Tools">[ <a href="index.html">Top</a> ] [ <span class="off">Edit</span> | <span class="off">Diff</span> | <span class="off">History</span> ] [ <a href="index.html#pages">Page list</a> | <a href="index.html#recent">Recent changes</a> | <a href="faq.html">FAQ</a> ]</nav>
+<div class="pr" aria-label="Ads">
+<!-- Ad 1: Milleaf (BOOTH product page) -->
+<div class="pr-item">
+<a class="banner banner-img" href="https://mimicria.booth.pm/items/8957446" target="_blank" rel="noopener"><span class="pr-tag">PR</span><img src="../img/banner-milleaf.png" width="468" height="60" alt="Milleaf: make a book from the VRChat photos you have saved. Photo book app, free trial available (BOOTH)"></a>
+<p class="pr-note">Milleaf is an app made by the author of this site.</p>
+</div>
+<!-- Ad 2: Mimicria Planetarium (VRChat world page) -->
+<div class="pr-item">
+<a class="banner banner-img" href="https://vrchat.com/home/world/wrld_c1abe1a4-a4f7-40de-bcd5-7b3b6c1bd456" target="_blank" rel="noopener"><span class="pr-tag">PR</span><img src="../img/banner-planetarium.png" width="468" height="60" alt="A night journey that never ends. Mimicria Planetarium, a VRChat world"></a>
+<p class="pr-note">Mimicria Planetarium is a VRChat world made by the author of this site.</p>
+</div>
+</div>
+<div class="body">
+<main class="main">
+<p class="lastmod">Last modified: 2026-11-23 (Mon)</p>
+<h1>RABBIT HOLE</h1>
+<figure class="ref"><img src="../img/rh-board.jpg" width="700" height="600" alt="The whole RABBIT HOLE machine, with rabbit-shaped decorations and the name plate on top"><figcaption>The whole machine</figcaption></figure>
+<p>The new machine. Every jackpot goes into a 10-spin ST (a kakuhen that lasts a set number of spins). Left-shooting only. Six units on the front row of the island.</p>
+<div class="contents">
+<p>Contents</p>
+<ul>
+<li><a href="#spec">Specs</a></li>
+<li><a href="#split">Jackpot split</a></li>
+<li><a href="#shoot">How to shoot</a></li>
+<li><a href="#st">ST (Rabbit RUSH)</a></li>
+<li><a href="#yaku">Board and gimmicks</a></li>
+<li><a href="#rel">Reliability tables</a></li>
+<li><a href="#guide">Effects guide</a></li>
+<li><a href="#hidden">Premiums, hidden features and trivia</a></li>
+<li><a href="#data">Data counter</a></li>
+</ul>
+</div>
+
+<h2 id="spec">Specs</h2>
+<table class="spec">
+<tbody>
+<tr><th>Jackpot odds</th><td><span class="big">1/99.0</span></td></tr>
+<tr><th>In ST</th><td>1/9.0</td></tr>
+<tr><th>ST</th><td>10 spins (every jackpot goes to ST)</td></tr>
+<tr><th>Continuation</th><td>About 69%</td></tr>
+<tr><th>Rounds</th><td>8R / 3R (10 counts per round)</td></tr>
+<tr><th>Balls out</th><td>8R about 960 / 3R about 360</td></tr>
+<tr><th>Payout</th><td>Heso 3 / den-chu 3 / attacker 12 / side pockets 10</td></tr>
+<tr><th>Payback</th><td>About 141% (estimate)</td></tr>
+</tbody>
+</table>
+<p class="note">* Border: still being checked.</p>
+
+<h2 id="split">Jackpot split</h2>
+<table>
+<thead><tr><th>Pocket</th><th>8R (ST)</th><th>3R (ST)</th></tr></thead>
+<tbody>
+<tr><th>Heso</th><td class="n">15%</td><td class="n">85%</td></tr>
+<tr><th>Den-chu</th><td class="n">25%</td><td class="n">75%</td></tr>
+</tbody>
+</table>
+
+<h2 id="shoot">How to shoot</h2>
+<ul>
+<li>Left-shooting all the way. The right side of the board is decoration, and there's no right-shooting</li>
+<li>Strength is automatic</li>
+<li>The heso (start pocket) doubles as the den-chu (electric tulip). Balls go in more easily when the ear-shaped wings open</li>
+<li>There's no through gate. 55% of the balls you shoot become futo holds</li>
+</ul>
+<table>
+<thead><tr><th></th><th>Normal</th><th>In ST</th></tr></thead>
+<tbody>
+<tr><th>Futo hit</th><td>1/16</td><td>9/10</td></tr>
+<tr><th>Futo spin</th><td>12 s</td><td>0.6 s</td></tr>
+<tr><th>Wings open</th><td>0.15 s x1</td><td>4.0 s x2</td></tr>
+</tbody>
+</table>
+<h3 id="yaku">Board and gimmicks</h3>
+<p>Bunny ears and a spinning black and white rabbit above the screen. Carrot windmills and the patlamp below it.</p>
+<div class="figs">
+<figure><img src="../img/rh-board-up.jpg" width="700" height="680" alt="Close-up of the RABBIT HOLE board: the dot display in a night sky with a moon and rabbits" loading="lazy"><figcaption>Board</figcaption></figure>
+<figure><img src="../img/rh-yaku-top.jpg" width="700" height="520" alt="Bunny ears and black and white rabbits above the dot display" loading="lazy"><figcaption>Above the screen (bunny ears, black and white rabbits)</figcaption></figure>
+</div>
+
+<h2 id="st">ST (Rabbit RUSH)</h2>
+<ul>
+<li>After a jackpot you get 10 spins of ST (1/9.0). Hit within those 10 and you get another ST. Miss them all and it's back to normal</li>
+<li>Going in shows "<span lang="ja">ラビットRUSH!</span>" (Rabbit RUSH!)</li>
+<li>During ST, pink and white light runs around the screen frame and the spins left show on the top edge, with a countdown from 5</li>
+</ul>
+<div class="figs">
+<figure><img src="../img/rh-st.jpg" width="640" height="384" alt="Dot display during ST showing 777 in pink" loading="lazy"><figcaption>Screen during ST</figcaption></figure>
+<figure><img src="../img/rh-st-wide.jpg" width="800" height="626" alt="The machine during ST with the board edge glowing pink" loading="lazy"><figcaption>The machine during ST</figcaption></figure>
+</div>
+
+<h2 id="rel">Reliability tables</h2>
+<p>Reliability matches STAR PARADE. Only the notice names are different.</p>
+<p class="note">* Reliability is how often it turns into a jackpot when that effect shows up (analysis value, normal mode). 50% and up, and guaranteed effects, are in red.</p>
+<!--REL-RABBIT:BEGIN-->
+<div class="rel-pair">
+<div>
+<h3>Hold color</h3>
+<table class="rel">
+<thead><tr><th>Color</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>Blue</td><td class="n">1.7%</td></tr>
+<tr><td>Green</td><td class="n">7.3%</td></tr>
+<tr><td>Red</td><td class="n">33.2%</td></tr>
+<tr><td>Gold</td><td class="n hot">65.6%</td></tr>
+<tr><td>Rainbow</td><td class="n sure">Guaranteed</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3>Reach</h3>
+<table class="rel">
+<thead><tr><th>Effect</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>Normal reach</td><td class="n">3.1%</td></tr>
+<tr><td>Super reach</td><td class="n">48.0%</td></tr>
+<tr><td>Full rotation</td><td class="n sure">Guaranteed</td></tr>
+<tr><td>Final battle (PUSH)</td><td class="n hot">52.3%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3>Notices</h3>
+<table class="rel">
+<thead><tr><th>Color</th><th>Carrot Balloon</th><th>Rabbit Herd</th></tr></thead>
+<tbody>
+<tr><td>Any color</td><td class="n">1.3%</td><td class="n">19.4%</td></tr>
+<tr><td>White</td><td class="n">0.2%</td><td class="n">3.7%</td></tr>
+<tr><td>Blue</td><td class="n">0.7%</td><td class="n">10.8%</td></tr>
+<tr><td>Green</td><td class="n">1.7%</td><td class="n">24.3%</td></tr>
+<tr><td>Red</td><td class="n">6.2%</td><td class="n hot">54.7%</td></tr>
+<tr><td>Gold</td><td class="n">23.5%</td><td class="n hot">84.7%</td></tr>
+<tr><td>Rainbow</td><td class="n sure">Guaranteed</td><td class="n sure">Guaranteed</td></tr>
+</tbody>
+</table>
+<div class="rel-pair">
+<div>
+<h3>Omens (characters running along the top)</h3>
+<table class="rel">
+<thead><tr><th>Effect</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>Friends (3)</td><td class="n">1.1%</td></tr>
+<tr><td>Big parade (6)</td><td class="n">2.6%</td></tr>
+<tr><td>Gold</td><td class="n">13.7%</td></tr>
+<tr><td>Rainbow</td><td class="n hot">69.1%</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3>Notices during a reach</h3>
+<table class="rel">
+<thead><tr><th>Effect</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>Carrot Balloon</td><td class="n">17.8%</td></tr>
+<tr><td>Rabbit Herd</td><td class="n">35.1%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="rel-pair">
+<div>
+<h3>Step-up notice</h3>
+<table class="rel">
+<thead><tr><th>Effect</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>Up to step 1</td><td class="n">4.4%</td></tr>
+<tr><td>Up to step 2</td><td class="n">10.9%</td></tr>
+<tr><td>Up to step 3</td><td class="n">37.4%</td></tr>
+<tr><td>Up to step 4</td><td class="n hot">71.5%</td></tr>
+<tr><td>Up to step 5</td><td class="n hot">92.8%</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3>Gijiren (pseudo re-spin)</h3>
+<table class="rel">
+<thead><tr><th>Effect</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>×2</td><td class="n">6.2%</td></tr>
+<tr><td>×3</td><td class="n">32.2%</td></tr>
+<tr><td>×4</td><td class="n hot">56.5%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3>Guaranteed effects</h3>
+<p>Rainbow hold, blackout, patlamp at spin start, revival, freeze, all lights out, rabbit walking backwards</p>
+<p class="note">Rabbit walking backwards: during a normal reach, the rabbits on the top strip walk backwards.</p>
+<!--REL-RABBIT:END-->
+<p>Step-up and gijiren reliability is the same as STAR PARADE. Here the step count shows as the number of rabbits. For the other effects, see <a href="star-parade.html#rel">STAR PARADE's reliability tables</a>. There's no kakuhen upgrade chance.</p>
+
+<h2 id="guide">Effects guide</h2>
+<h3>Holds</h3>
+<p>The hold lamps are below the screen. Color reliability is in the table above: gold is gekiatsu, rainbow is guaranteed.</p>
+<figure class="ref"><img src="../img/rh-yaku-bottom.jpg" width="700" height="524" alt="Below the dot display: carrot windmills, the patlamp, and the row of hold lamps under them" loading="lazy"><figcaption>Below the screen (carrot windmills, patlamp, hold lamps)</figcaption></figure>
+<h3>Notices</h3>
+<p>Carrot Balloon is the weak notice and Rabbit Herd the hot one. 6 colors. Rabbit Herd red and up is gekiatsu, rainbow is guaranteed.</p>
+<div class="koma">
+<figure><img src="../img/rh-notice-balloon-blue.jpg" width="640" height="384" alt="Carrot Balloon notice with blue dots scattered over the numbers" loading="lazy"><figcaption>Carrot Balloon (blue)</figcaption></figure>
+<figure><img src="../img/rh-notice-balloon-red.jpg" width="640" height="384" alt="Carrot Balloon notice with red dots scattered over the numbers" loading="lazy"><figcaption>Carrot Balloon (red)</figcaption></figure>
+<figure><img src="../img/rh-notice-herd-gold.jpg" width="640" height="384" alt="Rabbit Herd notice: rabbits run over gold and black stripes" loading="lazy"><figcaption>Rabbit Herd (gold)</figcaption></figure>
+<figure><img src="../img/rh-notice-herd-rainbow.jpg" width="640" height="384" alt="Rabbit Herd notice: rabbits run over rainbow stripes" loading="lazy"><figcaption>Rabbit Herd (rainbow)</figcaption></figure>
+</div>
+<h3>Step-up</h3>
+<p>One more rabbit joins the top strip each step. Step 4 drops a shutter, and step 5 turns the numbers rainbow.</p>
+<div class="koma">
+<figure><img src="../img/rh-step1.jpg" width="640" height="384" alt="One rabbit on the top strip" loading="lazy"><figcaption>Step 1</figcaption></figure>
+<figure><img src="../img/rh-step4.jpg" width="640" height="384" alt="Four rabbits in a row and the shutter coming down" loading="lazy"><figcaption>Step 4</figcaption></figure>
+<figure><img src="../img/rh-step5.jpg" width="640" height="384" alt="Five rabbits in a row and rainbow numbers" loading="lazy"><figcaption>Step 5</figcaption></figure>
+</div>
+<h3>Gijiren</h3>
+<p>The reels stop on a run of numbers, hold for a beat, then "<span lang="ja">もう一回!</span>" (One more!) spins them again. The text goes green, red, then gold.</p>
+<div class="koma">
+<figure><img src="../img/rh-pseudo-stop.jpg" width="640" height="384" alt="The reels stopped on the run 789" loading="lazy"><figcaption>1. Stops on a run</figcaption></figure>
+<figure><img src="../img/rh-pseudo-tame.jpg" width="640" height="384" alt="789 dims and specks of light appear" loading="lazy"><figcaption>2. The pause</figcaption></figure>
+<figure><img src="../img/rh-pseudo-1.jpg" width="640" height="384" alt="One more text in green" loading="lazy"><figcaption>3. One more! (green)</figcaption></figure>
+<figure><img src="../img/rh-pseudo-2.jpg" width="640" height="384" alt="One more text in red" loading="lazy"><figcaption>4. One more! (red)</figcaption></figure>
+<figure><img src="../img/rh-pseudo-3.jpg" width="640" height="384" alt="One more text in gold" loading="lazy"><figcaption>5. One more! (gold)</figcaption></figure>
+</div>
+<h3>How a super reach plays out</h3>
+<div class="koma">
+<figure><img src="../img/rabbit-cutin.jpg" width="480" height="270" alt="A rabbit cut-in on the dot display" loading="lazy"><figcaption>1. Cut-in</figcaption></figure>
+<figure><img src="../img/rh-sp-in.jpg" width="640" height="384" alt="A 4 on each side and a big 9 in the middle with rays of light, rabbits below" loading="lazy"><figcaption>2. Super starts</figcaption></figure>
+<figure><img src="../img/rh-sp-gekiatsu.jpg" width="640" height="384" alt="Red gekiatsu text filling the dot display" loading="lazy"><figcaption>3. "<span lang="ja">激アツ</span>" in the second half</figcaption></figure>
+<figure><img src="../img/rh-sp-late.jpg" width="640" height="384" alt="A 4 on each side and a red 4 in the middle, with rabbit outlines" loading="lazy"><figcaption>4. Super, second half</figcaption></figure>
+</div>
+<h3>Final battle and PUSH</h3>
+<p>The final battle is 52.3%. Press the PUSH button that appears in front of the dot display.</p>
+<div class="koma">
+<figure><img src="../img/rh-final-herd.jpg" width="640" height="384" alt="A herd of rabbits lined up on the dot display" loading="lazy"><figcaption>1. Into the final battle</figcaption></figure>
+<figure><img src="../img/rh-final.jpg" width="640" height="384" alt="A big rabbit in a burst of light" loading="lazy"><figcaption>2. Final battle</figcaption></figure>
+<figure><img src="../img/rh-push.jpg" width="640" height="384" alt="A red PUSH button drawn on the dot display" loading="lazy"><figcaption>3. PUSH</figcaption></figure>
+</div>
+
+<h2 id="hidden">Premiums, hidden features and trivia</h2>
+<details class="spoiler">
+<summary>* Spoilers. Click to open</summary>
+<h3>Premiums (guaranteed jackpot)</h3>
+<table>
+<thead><tr><th>Effect</th><th>What happens</th></tr></thead>
+<tbody>
+<tr><th>Rabbit walks backwards</th><td>During a normal reach, the rabbits on the top strip walk backwards</td></tr>
+<tr><th>Blackout</th><td>A long blackout at spin start, then straight into full rotation</td></tr>
+<tr><th>Freeze</th><td>Everything stops and goes silent the moment the spin starts, then a flash and straight into full rotation</td></tr>
+<tr><th>All lights out</th><td>The screen and cabinet lights all go dark and silent, then a flash and straight into full rotation</td></tr>
+<tr><th>Patlamp at spin start</th><td>The patlamp spins right at the start of the spin</td></tr>
+<tr><th>Rainbow</th><td>Rainbow hold, rainbow notice (Carrot Balloon / Rabbit Herd)</td></tr>
+<tr><th>Full rotation</th><td>Lines up 333 or 777. Spins to the very end and stops in rainbow</td></tr>
+<tr><th>Revival</th><td>Fakes a miss on a super, then hits</td></tr>
+</tbody>
+</table>
+<p class="note">* Blackout, freeze and all lights out only appear in normal mode. Each one runs long and flashy and goes straight into full rotation (333 or 777).</p>
+<div class="figs">
+<figure><img src="../img/rh-allrot.jpg" width="640" height="384" alt="Dot display during full rotation with rainbow numbers" loading="lazy"><figcaption>Full rotation (spinning in rainbow numbers)</figcaption></figure>
+<figure><img src="../img/rh-allrot-wide.jpg" width="800" height="626" alt="The machine during full rotation with the board edge glowing rainbow" loading="lazy"><figcaption>The machine during full rotation</figcaption></figure>
+</div>
+<h3>Hidden features</h3>
+<ul>
+<li>8R upgrade: at the end of a 3R jackpot, "<span lang="ja">昇格チャンス</span>" (Upgrade Chance) appears and a roulette flips between 3R and 8R. Stop on 8R and it's upgraded. 60% of 8R jackpots show up as 3R first and then upgrade. 25% of real 3R jackpots try the upgrade and fail</li>
+<li>Hold sakiyomi (look-ahead): a hold can show one or two colors below its real color when it goes in. It moves up one step at a time while it waits, and whatever is left goes up as a chance-up at spin start. If a white hold just flickers at spin start, that's a gase (fake-out)</li>
+<li>Chance Zone: a look-ahead zone that appears when 2 or more holds are queued ahead. On a miss it only shows up when that spin turns into a super reach</li>
+</ul>
+<h3>Trivia</h3>
+<ul>
+<li>Omens are the rabbits running along the top strip. Gold is 13.7%, rainbow 69.1%</li>
+<li>Chance pattern 311: a no-reach miss that stops on 311 flashes gold and bounces. 60.7%. It never stops on 311 by coincidence</li>
+<li>No notices, step-ups, gijiren or spin-start effects during ST</li>
+<li>Occult ①-⑤ works (<a href="hall.html#occult">How the parlor works</a>)</li>
+</ul>
+</details>
+
+<h2 id="data">Data counter</h2>
+<figure class="ref"><img src="../img/rabbit-crown.jpg" width="960" height="720" alt="The data counter on top of the machine and the RABBIT HOLE name plate" loading="lazy"><figcaption>Data counter</figcaption></figure>
+<p>On top of the machine: jackpots, streak, starts and last time, plus the call lamp.</p>
+</main>
+<nav class="menu" aria-label="Menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="index.html">Top page</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+<h2>Machines</h2>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a> (new)</li>
+</ul>
+<h2>Parlor</h2>
+<ul>
+<li><a href="hall.html">How the parlor works</a></li>
+<li><a href="hall.html#take">Taking a machine</a></li>
+<li><a href="hall.html#money">Making money</a></li>
+<li><a href="hall.html#occult">Occult</a></li>
+<li><a href="hall.html#rank">Member ranks</a></li>
+</ul>
+<h2>Recent updates</h2>
+<p class="date">2026-11-23</p>
+<ul>
+<li><a href="star-parade.html">STAR PARADE</a></li>
+<li><a href="rabbit-hole.html">RABBIT HOLE</a></li>
+<li><a href="hall.html">How the parlor works</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="index.html">Top page</a></li>
+</ul>
+<h2>Board</h2>
+<ul>
+<li><span class="off">Tips and info</span></li>
+<li><span class="off">Chat</span></li>
+</ul>
+</nav>
+</div>
+<footer class="foot"><p>© Mimicria — Mitori</p></footer>
+</div>
+</body>
+</html>
