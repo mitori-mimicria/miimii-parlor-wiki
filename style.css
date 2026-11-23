@@ -179,3 +179,8 @@ figure.mid { max-width: 420px; }
 .koma { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 4px 10px; max-width: 860px; margin: 4px 0 10px; }
 .koma figure { margin: 0; }
 @media (max-width: 760px) { .koma { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ネタバレの折りたたみ（11-23） */
+.spoiler { margin: 6px 0 12px; border: 1px dashed var(--line); padding: 4px 8px; }
+.spoiler > summary { cursor: pointer; color: var(--soft); font-size: 13px; }
+.spoiler[open] > summary { margin-bottom: 6px; }
