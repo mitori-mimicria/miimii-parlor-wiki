@@ -52,6 +52,7 @@
 <li><a href="#money">돈벌이</a></li>
 <li><a href="#smoke">담배와 주스</a></li>
 <li><a href="#buff">배출 업과 오컬트</a></li>
+<li><a href="#bath">목욕탕 (MiiMii-yu)</a></li>
 <li><a href="#rank">회원 랭크</a></li>
 <li><a href="#stats">성적, 랭킹, 표시</a></li>
 </ul>
@@ -66,6 +67,7 @@
 <tr><th>들어가서 왼쪽</th><td>경품 카운터, 담배와 주스 진열대, 계수기 (카운터 안쪽 끝), 커피 왜건 (서쪽 벽가)</td></tr>
 <tr><th>들어가서 오른쪽</th><td>내 성적 화면, 랭킹 (동쪽 벽), 안쪽에 휴게 코너 (상황판과 TV, 쓰레기통)</td></tr>
 <tr><th>통로 위</th><td>전광 게시판</td></tr>
+<tr><th>들어가서 안쪽</th><td>화장실 (비상구 동쪽의 문. 잠글 수 있다). 동쪽 옆에 <a href="#bath">목욕탕 MiiMii-yu</a></td></tr>
 <tr><th>가게 밖</th><td>수수께끼의 골동품상 (Hoshino Shokai) (스폰 지점 왼쪽, 주차장 끝의 오두막)</td></tr>
 </tbody>
 </table>
@@ -141,7 +143,7 @@
 <table>
 <thead><tr><th>방법</th><th>받는 것</th><th>메모</th></tr></thead>
 <tbody>
-<tr><th>커피 판매원</th><td>3잔에 저축 구슬 250개</td><td>쉬지 않고 계속할 수 있다</td></tr>
+<tr><th>커피 판매원</th><td>3잔에 저축 구슬 250개</td><td>배출 업 2분 포함. 쉬지 않고 계속할 수 있다</td></tr>
 <tr><th>쓰레기 줍기</th><td>빈 캔도 꽁초도 1개에 10개 (저축 구슬)</td><td>배출 업 2분 포함</td></tr>
 <tr><th>구슬 줍기</th><td>6초에 구슬 1개 (1분에 10개, 저축 구슬)</td><td>휴게 코너 긴 의자 위의 표로 시작한다. 코너를 벗어나거나 한 번 더 누르면 멈춘다</td></tr>
 <tr><th>오늘의 할 일</th><td>저축 구슬 50~125개 (주간 할 일은 375~625개)</td><td>매일 3개, 매주 1개</td></tr>
@@ -312,6 +314,7 @@
 <h2 id="buff">배출 업과 오컬트</h2>
 <h3>배출 업</h3>
 <p>어태커 1카운트의 상구가 +1.</p>
+<p>시간으로 붙는 배출 업의 남은 시간(쓰레기, 선물, 커피 판매원, 목욕 후, 담배나 주스를 다 쓴 뒤에 남는 몫)은 자기 기계가 대박 라운드 중(라운드 사이 포함)일 때만 줄고, 그 밖에는 멈춘다. 들고 있거나 놓아 둔 동안의 몫은 그동안 계속 효과가 있다.</p>
 <p class="note">※ 이 페이지의 시간은 화이트 회원 기준. 회원 랭크에 따라 늘어난다 (블루 ×1.1, 그린 ×1.2, 레드 ×1.35, 골드 ×1.5). 오컬트 한 모금, 옆 대박, 갓 빌림의 시간도 같다.</p>
 <table>
 <thead><tr><th>걸리는 때</th><th>지속 시간</th></tr></thead>
@@ -320,6 +323,8 @@
 <tr><td>불 붙은 담배를 들고 있거나 놓아 둔다</td><td>그동안</td></tr>
 <tr><td>쓰레기를 1개 버린다</td><td>2분 (이어서 하면 10분까지)</td></tr>
 <tr><td>선물을 하거나 받는다</td><td>2분 (이어서 하면 10분까지)</td></tr>
+<tr><td>커피 판매원으로 3잔을 건넨다</td><td>2분 (이어서 하면 10분까지)</td></tr>
+<tr><td>목욕 후, 커피 우유 (<a href="#bath">목욕탕</a>)</td><td>100분, 40분</td></tr>
 </tbody>
 </table>
 <h3 id="occult">오컬트</h3>
@@ -337,6 +342,30 @@
 <h3>인원수</h3>
 <p>인스턴스의 인원이 많을수록 구슬이 헤소에 들어가기 쉽다 (최대 +15%).</p>
 <p class="note">※ 걸려 있는 버프는 화면 왼쪽 아래, 소지 Mi 밑에 나온다 (예: <span lang="ja">出玉アップ　残り3:10／当たり×1.13（一服・借りたて）／回り+9%（店のにぎわい）</span>. 배출 업 3:10 남음, 한 모금과 갓 빌림으로 당첨이 ×1.13, 인원수로 회전 +9%라는 뜻).</p>
+
+<h2 id="bath">목욕탕 (<span lang="ja">みいみい湯</span>, MiiMii-yu)</h2>
+<p>가게 동쪽 옆의 대중목욕탕(센토). 탕에 몸을 담그면 목욕 후 배출 업이 붙는다.</p>
+<table>
+<tbody>
+<tr><th>입욕료</th><td>400Mi (반다이(카운터)의 <span lang="ja">払う</span>(내기))</td></tr>
+<tr><th><span lang="ja">湯上がり</span>(목욕 후)</th><td>탕이나 누워서 하는 탕에 60초 담그면 배출 업 100분</td></tr>
+<tr><th>커피 우유</th><td>120Mi (탈의실의 냉장 진열장). 마시면 배출 업 40분 (목욕 후와 합쳐서 140분까지)</td></tr>
+</tbody>
+</table>
+<ul>
+<li>돈을 내면 노렌(가림막) 안쪽으로 들어갈 수 있다. 건물과 앞마당에서 20초 나가 있으면 낸 것을 잊는다</li>
+<li>담그고 있는 동안은 목욕 후가 100분 그대로. 60초가 차기 전에 나오면 찬 만큼 줄어든다</li>
+<li>커피 우유는 병을 들고 사용하면 마신다</li>
+<li>탈의실에 긴 의자, 안마 의자, 체중계, 선풍기, 세면대(드라이어). 욕실에 탕, 누워서 하는 탕, 씻는 곳 6개</li>
+<li>미러는 세면대, 탕, 누워서 하는 탕에 있다. 거울 면을 누르면 High로 비치고, 한 번 더 누르면 사라진다. 목욕탕을 나가면 사라진다</li>
+<li>가게 입구의 <span lang="ja">椅子に座る</span>(의자에 앉기) 표를 켜면 탕, 긴 의자, 안마 의자에 앉을 수 있고, 누워서 하는 탕에 누울 수 있다. 탕에 서서 들어가도 담근 것으로 친다</li>
+</ul>
+<div class="figs">
+<figure><img src="../img/bath-front.jpg" width="800" height="450" alt="‘ゆ’ 글자 노렌이 걸린 목욕탕 입구. 둥근 지붕과 굴뚝" loading="lazy"><figcaption>입구</figcaption></figure>
+<figure><img src="../img/bath-bandai.jpg" width="800" height="450" alt="요금판(입욕료 400Mi, 커피 우유 120Mi)과 반다이" loading="lazy"><figcaption>반다이</figcaption></figure>
+<figure><img src="../img/bath-dress.jpg" width="800" height="450" alt="긴 의자, 안마 의자, 체중계, 우유 냉장 진열장, 선풍기가 있는 탈의실" loading="lazy"><figcaption>탈의실</figcaption></figure>
+<figure><img src="../img/bath-bath.jpg" width="800" height="450" alt="후지산 벽화 아래의 탕과 누워서 하는 탕" loading="lazy"><figcaption>욕실 (왼쪽이 탕, 오른쪽이 누워서 하는 탕)</figcaption></figure>
+</div>
 
 <h2 id="rank">회원 랭크</h2>
 <p>지금까지의 최고 소지 Mi로 올라간다. 내려가지 않는다.</p>
@@ -396,6 +425,7 @@
 <li><a href="hall.html#money">돈벌이</a></li>
 <li><a href="hall.html#occult">오컬트</a></li>
 <li><a href="hall.html#rank">회원 랭크</a></li>
+<li><a href="hall.html#bath">목욕탕</a></li>
 </ul>
 <h2>최근 갱신</h2>
 <p class="date">2026-11-28</p>

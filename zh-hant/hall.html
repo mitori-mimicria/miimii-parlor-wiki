@@ -52,6 +52,7 @@
 <li><a href="#money">賺錢</a></li>
 <li><a href="#smoke">香菸、飲料</a></li>
 <li><a href="#buff">出珠提升、玄學</a></li>
+<li><a href="#bath">錢湯（MiiMii-yu）</a></li>
 <li><a href="#rank">會員等級</a></li>
 <li><a href="#stats">成績、排行榜、畫面顯示</a></li>
 </ul>
@@ -66,6 +67,7 @@
 <tr><th>進門左邊</th><td>獎品櫃台、香菸與飲料架、計數機（櫃台最裡面的角落）、咖啡推車（西側牆邊）</td></tr>
 <tr><th>進門右邊</th><td>你的成績畫面、排行榜（東側牆面），深處有休息區（狀況板與電視、垃圾桶）</td></tr>
 <tr><th>通道上方</th><td>電子看板</td></tr>
+<tr><th>進門最裡面</th><td>廁所（緊急出口東邊的門，可以上鎖）。東邊隔壁是<a href="#bath">錢湯 MiiMii-yu</a></td></tr>
 <tr><th>店外</th><td>神秘古董商「Hoshino Shokai」（出生點左邊，停車場角落的小屋）</td></tr>
 </tbody>
 </table>
@@ -141,7 +143,7 @@
 <table>
 <thead><tr><th>方法</th><th>獲得</th><th>備註</th></tr></thead>
 <tbody>
-<tr><th>咖啡店員</th><td>3杯得存珠250顆</td><td>可以不休息一直做</td></tr>
+<tr><th>咖啡店員</th><td>3杯得存珠250顆</td><td>附帶出珠提升2分鐘。可以不休息一直做</td></tr>
 <tr><th>撿垃圾</th><td>空罐和菸蒂每個都是10顆（存珠）</td><td>附帶出珠提升2分鐘</td></tr>
 <tr><th>撿珠</th><td>每6秒1顆（1分鐘10顆，存珠）</td><td>在休息區長椅上方的牌子開始。離開休息區，或再按一次就會停止</td></tr>
 <tr><th>今日任務</th><td>存珠50〜125顆（每週任務是375〜625顆）</td><td>每天3個、每週1個</td></tr>
@@ -312,6 +314,7 @@
 <h2 id="buff">出珠提升、玄學</h2>
 <h3>出珠提升</h3>
 <p>大獎口每1個計數的賞球+1。</p>
+<p>依時間給的出珠提升（垃圾、請客、咖啡店員、出浴，以及菸或飲料用完後殘留的部分），剩餘時間只在自己的機台大當回合中（含回合之間）減少，其他時候會停住。拿著或放著期間的部分，那段時間一直有效。</p>
 <p class="note">※本頁的時間是White會員的時長。會員等級越高越長（Blue×1.1、Green×1.2、Red×1.35、Gold×1.5）。玄學的一口菸、隔壁大當、剛借珠的時間也一樣。</p>
 <table>
 <thead><tr><th>生效時機</th><th>持續時間</th></tr></thead>
@@ -320,6 +323,8 @@
 <tr><td>拿著或放著點著火的香菸</td><td>那段期間</td></tr>
 <tr><td>丟1個垃圾</td><td>2分鐘（連續進行最多累積到10分鐘）</td></tr>
 <tr><td>請客或被請客</td><td>2分鐘（連續進行最多累積到10分鐘）</td></tr>
+<tr><td>當咖啡店員送完3杯</td><td>2分鐘（連續進行最多累積到10分鐘）</td></tr>
+<tr><td>錢湯的出浴、咖啡牛奶（<a href="#bath">錢湯</a>）</td><td>100分鐘、40分鐘</td></tr>
 </tbody>
 </table>
 <h3 id="occult">玄學</h3>
@@ -337,6 +342,30 @@
 <h3>人數</h3>
 <p>Instance的人數越多，鋼珠越容易進啟動口（最多+15%）。</p>
 <p class="note">※生效中的增益會顯示在畫面左下、持有Mi的下方（例：<span lang="ja">出玉アップ　残り3:10／当たり×1.13（一服・借りたて）／回り+9%（店のにぎわい）</span>，意思是出珠提升剩3:10、一口菸和剛借珠使中獎機率×1.13、因人數使旋轉率+9%）。</p>
+
+<h2 id="bath">錢湯（<span lang="ja">みいみい湯</span>，MiiMii-yu）</h2>
+<p>店東邊隔壁的錢湯（公共澡堂）。泡進浴池就會得到出浴後的出珠提升。</p>
+<table>
+<tbody>
+<tr><th>入浴費</th><td>400Mi（番台櫃台的<span lang="ja">払う</span>（付款））</td></tr>
+<tr><th><span lang="ja">湯上がり</span>（出浴）</th><td>在浴池或躺浴裡泡60秒，出珠提升100分鐘</td></tr>
+<tr><th>咖啡牛奶</th><td>120Mi（更衣室的冷藏櫃）。喝了出珠提升40分鐘（和出浴的時間合計最多140分鐘）</td></tr>
+</tbody>
+</table>
+<ul>
+<li>付款後就能穿過門簾進去。離開建築和前院20秒，就會忘記你付過錢</li>
+<li>泡著的時候，出浴的時間一直是100分鐘。還沒泡滿60秒就出來，累積的時間會慢慢減少</li>
+<li>拿著咖啡牛奶的瓶子使用就能喝</li>
+<li>更衣室有長椅、按摩椅、體重計、電風扇、洗臉台（吹風機），浴室有浴池、躺浴、6個沖洗區</li>
+<li>洗臉台、浴池、躺浴都有鏡子。按鏡面會以High顯示，再按一次就消失。離開錢湯就會消失</li>
+<li>打開店門口的<span lang="ja">椅子に座る</span>（坐椅子）牌子，就能坐進浴池、長椅、按摩椅，躺進躺浴。站在浴池裡也算泡著</li>
+</ul>
+<div class="figs">
+<figure><img src="../img/bath-front.jpg" width="800" height="450" alt="門簾上寫著「ゆ」字的錢湯入口，唐破風屋頂和煙囪" loading="lazy"><figcaption>入口</figcaption></figure>
+<figure><img src="../img/bath-bandai.jpg" width="800" height="450" alt="價目牌（入浴費400Mi、咖啡牛奶120Mi）和番台" loading="lazy"><figcaption>番台</figcaption></figure>
+<figure><img src="../img/bath-dress.jpg" width="800" height="450" alt="有長椅、按摩椅、體重計、牛奶冷藏櫃、電風扇的更衣室" loading="lazy"><figcaption>更衣室</figcaption></figure>
+<figure><img src="../img/bath-bath.jpg" width="800" height="450" alt="富士山壁畫下的浴池和躺浴" loading="lazy"><figcaption>浴室（左邊是浴池，右邊是躺浴）</figcaption></figure>
+</div>
 
 <h2 id="rank">會員等級</h2>
 <p>由到目前為止的最高持有Mi決定。不會降級。</p>
@@ -396,6 +425,7 @@
 <li><a href="hall.html#money">賺錢</a></li>
 <li><a href="hall.html#occult">玄學</a></li>
 <li><a href="hall.html#rank">會員等級</a></li>
+<li><a href="hall.html#bath">錢湯</a></li>
 </ul>
 <h2>最新更新</h2>
 <p class="date">2026-11-28</p>
